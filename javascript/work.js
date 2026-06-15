@@ -75,7 +75,7 @@ for(const image of images){
     image.addEventListener("dblclick",e=>{
         images.forEach(image=>{image.classList.remove('proj-active')});
         e.target.classList.add('proj-active');
-        workTitle.href = `https://some-10s3r.github.io/${image.dataset.workHref}`;
+        workTitle.href = `https://jassemg.github.io/${image.dataset.workHref}`;
         workDesc.textContent = Descs[parseInt(image.dataset.projectIndex)];
         titleAnimateV2(e);
     });
